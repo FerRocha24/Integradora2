@@ -26,6 +26,9 @@
 #include <cmath>
 #include <limits>
 
-std::pair<int, int> findClosestCentral(std::pair<int, int> nuevaCasa, const std::vector<std::pair<int, int>> &centrales);
+/**
+ * documentacion find_closest_central
+ */
+std::pair<int, int> find_closest_central(std::pair<int, int> nuevaCasa, const std::vector<std::pair<int, int>> &centrales);
 
 #endif

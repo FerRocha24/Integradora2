@@ -34,18 +34,18 @@ public:
         }
     }
 
-    int find(int x)
+    int Find(int x)
     {
         if (parent[x] != x)
         {
-            parent[x] = find(parent[x]);
+            parent[x] = Find(parent[x]);
         }
         return parent[x];
     }
 
-    bool unite(int x, int y)
+    bool Unite(int x, int y)
     {
-        int px = find(x), py = find(y);
+        int px = Find(x), py = Find(y);
         if (px == py)
             return false;
 
@@ -91,7 +91,7 @@ std::vector<std::pair<int, int>> kruskal(const std::vector<std::vector<int>> &gr
 
     for (auto &[weight, u, v] : edges)
     {
-        if (uf.unite(u, v))
+        if (uf.Unite(u, v))
         {
             mst.emplace_back(u, v);
         }

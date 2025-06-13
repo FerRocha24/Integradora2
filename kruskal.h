@@ -26,6 +26,9 @@
 #include <tuple>
 #include <algorithm>
 
+/**
+ * documentacion kruskal
+ */
 std::vector<std::pair<int, int>> kruskal(const std::vector<std::vector<int>> &graph);
 
 #endif

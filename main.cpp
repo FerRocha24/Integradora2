@@ -73,7 +73,7 @@ int main()
     // 4. Búsqueda de central más cercana
     std::cout << std::endl
               << "4." << std::endl;
-    auto closest = findClosestCentral({xNuevo, yNuevo}, centrales);
+    auto closest = find_closest_central({xNuevo, yNuevo}, centrales);
     std::cout << "(" << closest.first << ", " << closest.second << ")" << std::endl;
 
     return 0;

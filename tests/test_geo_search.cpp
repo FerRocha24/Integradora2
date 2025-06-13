@@ -6,7 +6,7 @@ TEST(GeoSearchTest, SingleCentral)
     std::vector<std::pair<int, int>> centrales = {{100, 100}};
     std::pair<int, int> nuevaCasa = {150, 150};
 
-    auto closest = findClosestCentral(nuevaCasa, centrales);
+    auto closest = find_closest_central(nuevaCasa, centrales);
     EXPECT_EQ(closest.first, 100);
     EXPECT_EQ(closest.second, 100);
 }
@@ -20,7 +20,7 @@ TEST(GeoSearchTest, ExampleCase)
         {520, 480}};
     std::pair<int, int> nuevaCasa = {400, 300};
 
-    auto closest = findClosestCentral(nuevaCasa, centrales);
+    auto closest = find_closest_central(nuevaCasa, centrales);
     EXPECT_EQ(closest.first, 450);
     EXPECT_EQ(closest.second, 150);
 }

@@ -26,6 +26,9 @@
 #include <limits>
 #include <algorithm>
 
+/**
+ * documentacion tsp
+ */
 std::vector<int> tsp(const std::vector<std::vector<int>> &graph);
 
 #endif
