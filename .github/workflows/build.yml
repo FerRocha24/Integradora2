@@ -38,10 +38,10 @@ jobs:
       - name: Generate coverage report
         run: |
           cd build
-          lcov --capture --directory . --output-file coverage.info
-          lcov --remove coverage.info '/usr/*' --output-file coverage.info
-          lcov --remove coverage.info '*/_deps/*' --output-file coverage.info
-          lcov --remove coverage.info '*/tests/*' --output-file coverage.info
+          lcov --capture --directory . --output-file coverage.info --ignore-errors mismatch
+          lcov --remove coverage.info '/usr/*' --output-file coverage.info --ignore-errors mismatch
+          lcov --remove coverage.info '*/_deps/*' --output-file coverage.info --ignore-errors mismatch
+          lcov --remove coverage.info '*/tests/*' --output-file coverage.info --ignore-errors mismatch
           lcov --list coverage.info
 
   build:
@@ -69,10 +69,10 @@ jobs:
           cmake --build build
           cd build
           ctest --output-on-failure
-          lcov --capture --directory . --output-file coverage.info
-          lcov --remove coverage.info '/usr/*' --output-file coverage.info
-          lcov --remove coverage.info '*/_deps/*' --output-file coverage.info
-          lcov --remove coverage.info '*/tests/*' --output-file coverage.info
+          lcov --capture --directory . --output-file coverage.info --ignore-errors mismatch
+          lcov --remove coverage.info '/usr/*' --output-file coverage.info --ignore-errors mismatch
+          lcov --remove coverage.info '*/_deps/*' --output-file coverage.info --ignore-errors mismatch
+          lcov --remove coverage.info '*/tests/*' --output-file coverage.info --ignore-errors mismatch
 
       - uses: sonarsource/sonarqube-scan-action@v3
         env:
