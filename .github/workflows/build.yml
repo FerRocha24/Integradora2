@@ -36,7 +36,7 @@ jobs:
           ctest --output-on-failure
 
       - name: Copy input TXT files for tests
-        run: cp data/*.txt build/
+        run: cp input.txt build/ || echo "No input files to copy"
 
       - name: Run Binary to Generate Coverage
         run: |
@@ -52,7 +52,7 @@ jobs:
         run: |
           cd build
           lcov --capture --directory . --output-file coverage.info --ignore-errors mismatch
-          gcovr --root .. --exclude 'test/test/*' --exclude 'build/*' --exclude 'main.cpp' --sonarqube -o coverage.xml --print-summary
+          gcovr --root .. --exclude 'tests/*' --exclude 'build/*' --exclude 'main.cpp' --sonarqube -o coverage.xml --print-summary
 
       - name: Upload Coverage Report
         uses: actions/upload-artifact@v4
