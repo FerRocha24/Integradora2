@@ -5,6 +5,6 @@
 #include <tuple>
 #include <algorithm>
 
-std::vector<std::pair<int, int>> kruskal(const std::vector<std::vector<int>>& graph);
+std::vector<std::pair<int, int>> kruskal(const std::vector<std::vector<int>> &graph);
 
 #endif

@@ -5,6 +5,6 @@
 #include <cmath>
 #include <limits>
 
-std::pair<int, int> findClosestCentral(std::pair<int, int> nuevaCasa, const std::vector<std::pair<int, int>>& centrales);
+std::pair<int, int> findClosestCentral(std::pair<int, int> nuevaCasa, const std::vector<std::pair<int, int>> &centrales);
 
 #endif

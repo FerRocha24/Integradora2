@@ -1,0 +1,46 @@
+# Build directories
+build/
+cmake-build-*/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Compiled files
+*.o
+*.obj
+*.exe
+*.out
+*.app
+
+# Coverage files
+*.gcno
+*.gcda
+*.gcov
+coverage.info
+coverage_html/
+
+# SonarQube
+.sonar/
+.scannerwork/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test results
+Testing/
+CTestTestfile.cmake
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# Temporary files
+*.tmp
+*.temp
