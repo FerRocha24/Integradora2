@@ -67,7 +67,7 @@ int main()
     // 3. Ford-Fulkerson (Flujo máximo)
     std::cout << std::endl
               << "3." << std::endl;
-    int maxFlowValue = fordFulkerson(capacityMatrix, 0, N - 1);
+    int maxFlowValue = ford_fulkerson(capacityMatrix, 0, N - 1);
     std::cout << maxFlowValue << std::endl;
 
     // 4. Búsqueda de central más cercana

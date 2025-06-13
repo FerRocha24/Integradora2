@@ -1,3 +1,4 @@
+
 /*
  * SonarQube, open source software quality management tool.
  * Copyright (C) 2008-2013 SonarSource
@@ -54,7 +55,7 @@ bool bfs(std::vector<std::vector<int>> &rGraph, int s, int t, std::vector<int> &
     return false;
 }
 
-int fordFulkerson(std::vector<std::vector<int>> capacity, int s, int t)
+int ford_fulkerson(std::vector<std::vector<int>> capacity, int s, int t)
 {
     int V = capacity.size();
     std::vector<std::vector<int>> rGraph = capacity;

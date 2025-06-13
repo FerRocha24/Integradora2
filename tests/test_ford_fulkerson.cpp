@@ -18,7 +18,7 @@ TEST_F(FordFulkersonTest, BasicFlow)
         {0, 0, 0, 7, 0, 4},
         {0, 0, 0, 0, 0, 0}};
 
-    int maxFlow = fordFulkerson(capacity, 0, 5);
+    int maxFlow = ford_fulkerson(capacity, 0, 5);
     EXPECT_EQ(maxFlow, 23);
 }
 
@@ -29,7 +29,7 @@ TEST_F(FordFulkersonTest, SimpleFlow)
         {0, 0, 25},
         {0, 0, 0}};
 
-    int maxFlow = fordFulkerson(capacity, 0, 2);
+    int maxFlow = ford_fulkerson(capacity, 0, 2);
     EXPECT_EQ(maxFlow, 20); // Corregido: el flujo máximo real es 20
 }
 
@@ -40,7 +40,7 @@ TEST_F(FordFulkersonTest, NoFlow)
         {0, 0, 0},
         {0, 0, 0}};
 
-    int maxFlow = fordFulkerson(capacity, 0, 2);
+    int maxFlow = ford_fulkerson(capacity, 0, 2);
     EXPECT_EQ(maxFlow, 0);
 }
 
@@ -51,6 +51,6 @@ TEST_F(FordFulkersonTest, SinglePath)
         {0, 0, 3},
         {0, 0, 0}};
 
-    int maxFlow = fordFulkerson(capacity, 0, 2);
+    int maxFlow = ford_fulkerson(capacity, 0, 2);
     EXPECT_EQ(maxFlow, 3);
 }
