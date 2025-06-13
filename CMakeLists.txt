@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Configuración para cobertura de código
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} --coverage")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} --coverage -g -O0")
 set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} --coverage")
 
 # Buscar Google Test
@@ -38,7 +38,6 @@ target_link_libraries(tests
     graph_algorithms 
     GTest::GTest 
     GTest::Main
-    --coverage
 )
 
 # Configurar directorio de include
