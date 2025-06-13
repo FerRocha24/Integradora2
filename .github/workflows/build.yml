@@ -42,6 +42,7 @@ jobs:
           lcov --remove coverage.info '/usr/*' --output-file coverage.info --ignore-errors mismatch,unused
           lcov --remove coverage.info '*/_deps/*' --output-file coverage.info --ignore-errors mismatch,unused
           lcov --remove coverage.info '*/tests/*' --output-file coverage.info --ignore-errors mismatch,unused
+          lcov --remove coverage.info '*/main.cpp' --output-file coverage.info --ignore-errors mismatch,unused
           lcov --list coverage.info
 
   build:
@@ -73,6 +74,7 @@ jobs:
           lcov --remove coverage.info '/usr/*' --output-file coverage.info --ignore-errors mismatch,unused
           lcov --remove coverage.info '*/_deps/*' --output-file coverage.info --ignore-errors mismatch,unused
           lcov --remove coverage.info '*/tests/*' --output-file coverage.info --ignore-errors mismatch,unused
+          lcov --remove coverage.info '*/main.cpp' --output-file coverage.info --ignore-errors mismatch,unused
 
       - uses: sonarsource/sonarqube-scan-action@v3
         env:
