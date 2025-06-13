@@ -75,6 +75,11 @@ jobs:
           lcov --remove coverage.info '*/_deps/*' --output-file coverage.info --ignore-errors mismatch,unused
           lcov --remove coverage.info '*/tests/*' --output-file coverage.info --ignore-errors mismatch,unused
           lcov --remove coverage.info '*/main.cpp' --output-file coverage.info --ignore-errors mismatch,unused
+          echo "=== Coverage file verification ==="
+          ls -la coverage.info
+          echo "Coverage file exists and size is:" && stat --format="%s bytes" coverage.info
+          echo "First 15 lines of coverage.info:"
+          head -n 15 coverage.info
 
       - uses: sonarsource/sonarqube-scan-action@v3
         env:
