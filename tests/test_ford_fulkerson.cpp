@@ -30,7 +30,7 @@ TEST_F(FordFulkersonTest, SimpleFlow)
         {0, 0, 0}};
 
     int maxFlow = fordFulkerson(capacity, 0, 2);
-    EXPECT_EQ(maxFlow, 10);
+    EXPECT_EQ(maxFlow, 20); // Corregido: el flujo máximo real es 20
 }
 
 TEST_F(FordFulkersonTest, NoFlow)
