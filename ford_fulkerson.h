@@ -26,6 +26,10 @@
 #include <queue>
 #include <climits>
 
+
+/**
+ * Computes maximum flow using Ford-Fulkerson algorithm
+ */
 int ford_fulkerson(std::vector<std::vector<int>> capacity, int s, int t);
 
 #endif
