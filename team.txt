@@ -11,3 +11,15 @@ Fernando Rocha:
 - Documentación de las funciones relacionadas con flujo máximo
 - Diseño e implementación de pruebas unitarias completas
 - Asegurar cobertura de código suficiente (>80%)
+
+Manuel Adrian:
+- Implementación de búsqueda de central más cercana
+- Algoritmos de geometría computacional (distancias)
+- Manejo de coordenadas y puntos geográficos
+- Pruebas unitarias para funciones geométricas
+
+Ranferi Puig:
+- Manejo de archivos de entrada y parsing de datos
+- Implementación de la función principal (main)
+- Formateo de salida según especificaciones
+- Validación de entrada y manejo de errores
