@@ -4,3 +4,10 @@ Daniel Galván:
 - Implementación del algoritmo de Kruskal (MST)
 - Desarrollo del algoritmo TSP (Traveling Salesman)
 - Estructuras de datos para representación de grafos
+
+Fernando Rocha:
+- Implementación del algoritmo de Ford-Fulkerson para flujo máximo
+- Desarrollo de la función BFS para encontrar caminos de aumento
+- Documentación de las funciones relacionadas con flujo máximo
+- Diseño e implementación de pruebas unitarias completas
+- Asegurar cobertura de código suficiente (>80%)
