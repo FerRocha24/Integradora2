@@ -1,0 +1,6 @@
+Daniel Galván:
+- Resolución de issues de SonarQube
+- Refactoring de código para cumplir estándares de calidad
+- Implementación del algoritmo de Kruskal (MST)
+- Desarrollo del algoritmo TSP (Traveling Salesman)
+- Estructuras de datos para representación de grafos
